@@ -1902,7 +1902,7 @@ h1 { color: white }
 
 #slideshow-inner>ul>li {
     width: 20%;
-    height: 320px;
+    height: 100%;
     float: left;
     position: relative;
 }
