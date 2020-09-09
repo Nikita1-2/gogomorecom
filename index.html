@@ -179,7 +179,7 @@ body.custom-background { background-color: #ffffff; background-image: url("/wp-c
     .slider {
       position: relative;
       overflow: hidden;
-      max-width: 600px;
+      max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -291,10 +291,44 @@ body.custom-background { background-color: #ffffff; background-image: url("/wp-c
       background-color: #fff;
     }
 
-    .img-fluid {
-      display: inline-block;
-      height: auto;
-      max-width: 100%;
+    .slider__item {
+      height: 250px;
+      position: relative;
+    }
+
+    .slider__item_1 {
+      background: linear-gradient(45deg, #085078 10%, #85d8ce 90%);
+    }
+
+    .slider__item_2 {
+      background: linear-gradient(to right, #dd1818, #333333);
+    }
+
+    .slider__item_3 {
+      background: linear-gradient(to right, #093028, #237a57);
+    }
+
+    .slider__item_4 {
+      background: linear-gradient(to right, #243B55, #141E30);
+    }
+
+    .slider__item_inner {
+      position: absolute;
+      left: 15%;
+      right: 15%;
+      top: 20px;
+      bottom: 40px;
+      overflow: hidden;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .slider__item_title {
+      font-size: 2rem;
     }
   </style>
 </head>
@@ -304,17 +338,45 @@ body.custom-background { background-color: #ffffff; background-image: url("/wp-c
   <div class="slider">
     <div class="slider__wrapper">
       <div class="slider__items">
-        <div class="slider__item">
-          <img class="img-fluid" src="/examples/images/c1.jpg" alt="c1">
+        <div class="slider__item slider__item_1">
+          <div class="slider__item_inner">
+            <span class="slider__item_title">
+              Lorem ipsum dolor
+            </span>
+            <span class="slider__items_description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nihil quo molestiae perspiciatis qui vero?
+            </span>
+          </div>
         </div>
-        <div class="slider__item">
-          <img class="img-fluid" src="/examples/images/c2.jpg" alt="c2">
+        <div class="slider__item slider__item_2">
+          <div class="slider__item_inner">
+            <span class="slider__item_title">
+              Lorem ipsum dolor
+            </span>
+            <span class="slider__items_description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nihil quo molestiae perspiciatis qui vero?
+            </span>
+          </div>
         </div>
-        <div class="slider__item">
-          <img class="img-fluid" src="/examples/images/c3.jpg" alt="c3">
+        <div class="slider__item slider__item_3">
+          <div class="slider__item_inner">
+            <span class="slider__item_title">
+              Lorem ipsum dolor
+            </span>
+            <span class="slider__items_description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nihil quo molestiae perspiciatis qui vero?
+            </span>
+          </div>
         </div>
-        <div class="slider__item">
-          <img class="img-fluid" src="/examples/images/c4.jpg" alt="c4">
+        <div class="slider__item slider__item_4">
+          <div class="slider__item_inner">
+            <span class="slider__item_title">
+              Lorem ipsum dolor
+            </span>
+            <span class="slider__items_description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nihil quo molestiae perspiciatis qui vero?
+            </span>
+          </div>
         </div>
       </div>
     </div>
