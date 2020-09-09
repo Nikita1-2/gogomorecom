@@ -1868,7 +1868,7 @@ h1 { color: white }
 #slideshow-wrap {
     display: block;
     height: 320px;
-    min-width: 260px;
+    min-width: 100%;
     max-width: 640px;
     margin: auto;
     border: 12px rgba(255,255,240,1) solid;
